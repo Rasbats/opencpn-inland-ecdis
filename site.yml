@@ -4,8 +4,10 @@ site:
 
 content:
   sources:
-   - url: ./content/en
+   - url: ./
      branches: HEAD
+     start_paths:
+      - content/en
  
 ui:
   bundle:
