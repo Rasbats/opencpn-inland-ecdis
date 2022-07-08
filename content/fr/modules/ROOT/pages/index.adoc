@@ -1,3 +1,5 @@
 = Manuel français
 
 Ce guide est une introduction à OpenCPN. Il est destiné à un nouvel utilisateur du programme.
+
+https://rasbats.github.io/opencpn-inland-ecdis/manuals/0/index.html[OpenCPN Inland ECDIS Manual]
