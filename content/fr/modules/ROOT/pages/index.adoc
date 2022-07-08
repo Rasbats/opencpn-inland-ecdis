@@ -1,0 +1,3 @@
+= Manuel français
+
+Ce guide est une introduction à OpenCPN. Il est destiné à un nouvel utilisateur du programme.

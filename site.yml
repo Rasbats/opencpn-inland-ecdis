@@ -3,12 +3,23 @@ site:
   url: https://Rasbats.github.io/opencpn-inland-ecdis/
 
 content:
+  branches:
+    - main
+    
   sources:
-   - url: ./
-     branches: HEAD
-     start_paths:
-      - content/en
- 
+  - url: ./
+    branches: HEAD
+
+  - url: ./
+    branches: HEAD
+    start_paths:
+     - content/en
+     
+  - url: ./
+    branches: HEAD
+    start_paths:
+     - content/fr
+      
 ui:
   bundle:
     url: ./ui-bundle.zip

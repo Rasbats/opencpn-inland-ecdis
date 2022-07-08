@@ -1,0 +1,49 @@
+:experimental:
+
+= Plugins
+
+Plugins add extra functionality to the OpenCPN program.
+
+Four plugins are provided as part of the standard OpenCPN installation:
+
+* Grib
+* Dashboard
+* WMM
+* Chart Downloader
+
+btn:[Options] btn:[Plugins] 
+
+image:6.1.jpg[]
+
+The Chart Downloader plugin has already been used xref:charts:charts.adoc[HERE].
+
+The OpenCPN Plugins Manual describes each of the plugins:
+
+* https://opencpn-manuals.github.io/main/opencpn-plugins/grib_weather/grib_weather.html[Grib]
+
+* https://opencpn-manuals.github.io/main/opencpn-plugins/dashboard/dashboard.html[Dashboard]
+
+* https://opencpn-manuals.github.io/main/opencpn-plugins/wmm/wmm.html[WMM]
+
+* https://opencpn-manuals.github.io/main/opencpn-plugins/chart_downloader_tab/chart_downloader_tab.html[Chart Downloader]
+
+== Installing a plugin
+
+This is included here because it is important to use the latest plugin version.
+
+btn:[Options] btn:[Plugins] 
+
+btn:[Update Plugin Catalog: master]
+
+This results in a download containing links to install the latest plugins.
+
+The method of installing plugins generally is https://opencpn-manuals.github.io/main/opencpn-plugins/misc/plugin-install.html[HERE]
+
+
+
+
+
+
+
+
+

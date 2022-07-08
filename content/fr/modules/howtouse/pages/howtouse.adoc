@@ -1,0 +1,47 @@
+:experimental:
+
+= Using the Manual
+
+== Buttons
+
+Buttons to perform actions are shown like this: 
+
+btn:[Apply] btn:[OK] 
+
+A shortcut for a button's action is shown in italics, for example btn:[Create Route] _Ctrl-R_.
+
+== Tabs
+
+Select *Chart Downloader* is an example of selecting a tab in a notebook display. 
+
+== Links
+
+Links can be internal for navigating the manual or external, for the Internet.
+
+xref:getting_started:getting_started.adoc[HERE] is a link to the *Home Screen* page.
+
+https://opencpn.org/[HERE] is an external link to the OpenCPN website.
+
+Hover the mouse over https://opencpn.org/[HERE] and the browser shows where the link leads. 
+
+== Mouse Actions
+
+(Sorry)
+
+_click_ the mouse indicates a click of the mouse (MacOS) or left-click for other OS.
+
+_right-click_ is ctrl-click for the MacOS.
+
+== Menu Items
+
+A menu may have been displayed using _right-click_:
+
+image:4.6.jpg[]
+
+Select *Properties...* indicates a menu selection.
+
+
+
+
+
+

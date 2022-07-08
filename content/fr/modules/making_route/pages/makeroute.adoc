@@ -1,0 +1,41 @@
+:experimental:
+
+= Making a Route
+
+btn:[Create Route] on the tool bar image:4.1.jpg[] changes the icon for the cursor to a pencil image image:4.2.jpg[]. Move the cursor to the start point for the route and click the mouse. This drops the waypoint for the start of the route.
+
+image:4.3.jpg[]
+
+Continue to move the cursor to alter course points on the route, clicking at each turn. When you have dropped the waypoint for the end of the route press btn:[Esc] on the keyboard.
+
+Ending the route can also be made with _right_click_. A menu appears. 
+
+Select *End Route*.
+
+image:4.4.1.jpg[]
+
+image:4.4.jpg[]
+
+Hover the cursor close to the route and you will see information about the route and the leg closest to the cursor position.
+
+image:4.5.jpg[]
+
+_right_click_ and a menu appears. 
+
+image:4.6.jpg[]
+
+To give the route a name select *Properties...*.
+
+A form opens and the route can be named. From and To locations can also be added.
+
+image:4.7.jpg[]
+
+btn:[OK]
+
+btn:[Route &amp; Mark Manager] image:4.8.jpg[] on the tool bar opens a list of all the routes created.
+
+image:4.9.jpg[]
+
+btn:[Properties...] opens the form seen previously when using _right-click_ on the route.
+
+image:4.6.jpg[]
