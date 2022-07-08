@@ -1,5 +1,5 @@
 = Inland Ecdis Manual
 
-xref:basic_manual_en::index.adoc[English Manual]
+xref:manual_en::index.adoc[English Manual]
 
-xref:basic_manual_en::index.adoc[Manuel français]
+xref:manual_fr::index.adoc[Manuel français]
