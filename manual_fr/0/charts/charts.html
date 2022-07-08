@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Installing a Chart :: OpenCPN Basic</title>
+    <link rel="canonical" href="https://Rasbats.github.io/opencpn-inland-ecdis/manual_fr/0/charts/charts.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://Rasbats.github.io/opencpn-inland-ecdis"
+      >
+        OpenCPN Basic
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.opencpn.org">OpenCPN.org</a>
+            <a class="navbar-item"
+               href="https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual"
+            >
+               User Manual
+               </a>
+            <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+               Github Site
+               </a>
+            <a class="navbar-item" href="https://opencpn.org/flyspray/">
+               Bugtracker
+               </a>
+            <a class="navbar-item"
+                href="https://rasbats.github.io/opencpn-plugins-manual/">
+                    Plugin Manual (pre-alpha)
+               </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="manual_fr" data-version="0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">manual_fr</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../index.html">OpenCPN Basic Manual</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../howtouse/howtouse.html">Using the Manual</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installation/installation.html">Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting_started/getting_started.html">Home Screen</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="charts.html">Installing a Chart</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../GPS/gps.html">Adding a GPS Device</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../making_route/makeroute.html">Making a Route</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../following_route/followroute.html">Following a Route</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">manual_fr</span>
+    <span class="version">0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../manual_en/0/index.html">manual_en</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../manual_en/0/index.html">0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">manual_fr</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../manuals/0/index.html">OpenCPN Inland Ecdis Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../manuals/0/index.html">0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">manual_fr</a></li>
+    <li><a href="../index.html">OpenCPN Basic Manual</a></li>
+    <li><a href="charts.html">Installing a Chart</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Rasbats/opencpn-inland-ecdis/edit/build/content/fr/modules/charts/pages/charts.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Installing a Chart</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>For demonstration a freely available U.S. chart (CAPE SABLE TO CAPE HATTERAS) will be used.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_downloading_and_installing_a_u_s_chart"><a class="anchor" href="#_downloading_and_installing_a_u_s_chart"></a>Downloading and installing a U.S. chart</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><b class="button">Options</b> <span class="image"><img src="_images/2.0.jpg" alt="2.0"></span> on the tool bar
+<b class="button">Charts</b></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.1.jpg" alt="2.1"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Select the <em>Chart Downloader</em> tab</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.2.jpg" alt="2.2"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <b class="button">Add Catalog</b></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.3.jpg" alt="2.3"></span></p>
+</div>
+<div class="paragraph">
+<p>Select <em>USA - NOAA &amp; Inland charts</em> and press <b class="button">OK</b></p>
+</div>
+<div class="paragraph">
+<p>Two sets of charts are available, RNC and ENC.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>RNC</strong> are Raster charts, scanned charts with full navigational detail, where the detail cannot be adjusted.</p>
+</li>
+<li>
+<p><strong>ENC</strong> Electronic navigational charts where the objects and amount of detail needed can be chosen by the user. These charts are rapidly taking the place of RNC.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>ENC</strong> is used.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.4.jpg" alt="2.4"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.4.1.jpg" alt="2.4.1"></span></p>
+</div>
+<div class="paragraph">
+<p>Select <em>"by States"</em></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.5.jpg" alt="2.5"></span></p>
+</div>
+<div class="paragraph">
+<p>A default entry for the folder for downloaded charts is shown. For simplicity the default is used.</p>
+</div>
+<div class="paragraph">
+<p><strong>RNC</strong> <em>"NY - New York"</em> is selected. Press <b class="button">OK</b></p>
+</div>
+<div class="paragraph">
+<p>An entry for New York state appears in the catalog.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.6.jpg" alt="2.6"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Update</b></p>
+</div>
+<div class="paragraph">
+<p>Only one chart is needed <em>CAPE SABLE TO CAPE HATTERAS</em></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.7.jpg" alt="2.7"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Select All</b> first to allow deselecting all the charts</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.8.jpg" alt="2.8"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Select None</b> and then select <em>Cape Sable to Cape Hatteras</em></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.9.jpg" alt="2.9"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Download selected charts</b></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.10.jpg" alt="2.10"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Apply</b></p>
+</div>
+<div class="paragraph">
+<p>This returns you to <b class="button">Options</b></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.11.jpg" alt="2.11"></span></p>
+</div>
+<div class="paragraph">
+<p>Staying in <b class="button">Options</b> select the <em>Chart Files</em> tab and press <b class="button">Add Directory&#8230;&#8203;</b>
+Find the folder <em>US_NY</em> where the  <em>Cape Sable to Cape Hatteras</em> chart is located</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.12.jpg" alt="2.12"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Press <b class="button">Select Folder</b>
+An entry appears in the list of directories</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.14.jpg" alt="2.14"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Apply</b> and <b class="button">OK</b> to return to the main screen</p>
+</div>
+<div class="paragraph">
+<p>Move the base chart until you can see the East Coast of the USA.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Drag with the mouse</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>--<strong>OR</strong>--</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click the arrow <span class="image"><img src="_images/2.14.1.jpg" alt="40" width="40"></span> that appears when the mouse pointer is moved to the side of the display</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.15.jpg" alt="2.15"></span></p>
+</div>
+<div class="paragraph">
+<p>US Charts use the unit <strong>Feet</strong> for depths and heights.</p>
+</div>
+<div class="paragraph">
+<p>If you want to change units use <b class="button">Options</b></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.16.jpg" alt="2.16"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Display</b> and select the <em>Units</em> tab</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.17.jpg" alt="2.17"></span></p>
+</div>
+<div class="paragraph">
+<p>Use the dropdown for <em>Depth</em> to change the unit <em>Feet</em> to <em>Meters</em></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Apply</b> <b class="button">OK</b></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.18.jpg" alt="2.18"></span></p>
+</div>
+<div class="paragraph">
+<p>Charts available for OpenCPN are described in the <a href="https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:charts:chart_sources">User Manual</a></p>
+</div>
+<div class="paragraph">
+<p>Even without a navigational chart a GPS can be connected and tested. This is described <a href="../GPS/gps.html" class="page">HERE</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_high_resolution_base_map"><a class="anchor" href="#_high_resolution_base_map"></a>High resolution base map</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To improve the look of the base map a high resolution version can be installed using the chart downloader (Internet connection needed).</p>
+</div>
+<div class="paragraph">
+<p><b class="button">Options</b> <b class="button">Charts</b> <strong>Chart Downloader</strong> <b class="button">Add Catalog</b></p>
+</div>
+<div class="paragraph">
+<p>Select <strong>GSHHG basemap</strong> then <strong>All GSHHG basemaps</strong></p>
+</div>
+<div class="paragraph">
+<p>Use the default installation directory.</p>
+</div>
+<div class="paragraph">
+<p><b class="button">OK</b></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Update</b> <b class="button">Download selected charts</b></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Apply</b> <b class="button">OK</b></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.19.jpg" alt="2.19"></span></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

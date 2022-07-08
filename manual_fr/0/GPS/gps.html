@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Adding a GPS Device :: OpenCPN Basic</title>
+    <link rel="canonical" href="https://Rasbats.github.io/opencpn-inland-ecdis/manual_fr/0/GPS/gps.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://Rasbats.github.io/opencpn-inland-ecdis"
+      >
+        OpenCPN Basic
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.opencpn.org">OpenCPN.org</a>
+            <a class="navbar-item"
+               href="https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual"
+            >
+               User Manual
+               </a>
+            <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+               Github Site
+               </a>
+            <a class="navbar-item" href="https://opencpn.org/flyspray/">
+               Bugtracker
+               </a>
+            <a class="navbar-item"
+                href="https://rasbats.github.io/opencpn-plugins-manual/">
+                    Plugin Manual (pre-alpha)
+               </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="manual_fr" data-version="0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">manual_fr</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../index.html">OpenCPN Basic Manual</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../howtouse/howtouse.html">Using the Manual</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installation/installation.html">Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting_started/getting_started.html">Home Screen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../charts/charts.html">Installing a Chart</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="gps.html">Adding a GPS Device</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../making_route/makeroute.html">Making a Route</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../following_route/followroute.html">Following a Route</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">manual_fr</span>
+    <span class="version">0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../manual_en/0/index.html">manual_en</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../manual_en/0/index.html">0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">manual_fr</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../manuals/0/index.html">OpenCPN Inland Ecdis Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../manuals/0/index.html">0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">manual_fr</a></li>
+    <li><a href="../index.html">OpenCPN Basic Manual</a></li>
+    <li><a href="gps.html">Adding a GPS Device</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Rasbats/opencpn-inland-ecdis/edit/build/content/fr/modules/GPS/pages/gps.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Adding a GPS Device</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Many different GPS devices can be used to provide OpenCPN with the boat&#8217;s position. For simplicity the Globalsat BU-353S4 GPS is used to demonstrate installing and using a GPS with OpenCPN</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.0.jpg" alt="3.0"></span></p>
+</div>
+<div class="paragraph">
+<p>Other GPS devices that are available are listed <a href="https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:supplementary_hardware:gps_devices">HERE</a>.</p>
+</div>
+<div class="paragraph">
+<p>The GPS needs line of sight with satellites. You may need to move the GPS until it has a clear view of the sky. On a boat you could find that sufficient signal is received through a fibreglass deck.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_device_drivers"><a class="anchor" href="#_device_drivers"></a>Device Drivers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Device drivers for various OS can be downloaded <a href="https://www.globalsat.com.tw/en/a4-10593/BU-353S4.html">HERE</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_windows"><a class="anchor" href="#_windows"></a>Windows</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Download the installer for the version of Windows you are running.</p>
+</div>
+<div class="paragraph">
+<p>Install the driver using the installer .exe.</p>
+</div>
+<div class="paragraph">
+<p>Plug in the GPS. Windows should recognise the device and use the appropriate driver for it.</p>
+</div>
+<div class="paragraph">
+<p><b class="button">Options</b> <b class="button">Connections</b></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.1.jpg" alt="3.1"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Add connection</b></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.2.jpg" alt="3.2"></span></p>
+</div>
+<div class="paragraph">
+<p>Using the <strong>DataPort</strong> dropdown select the Prolific USB port.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.3.jpg" alt="3.3"></span></p>
+</div>
+<div class="paragraph">
+<p>Scroll up and tick the <strong>Show NMEA Debug Window</strong>. This is not strictly necessary but gives a good indication of whether the GPS is functioning correctly.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.4.jpg" alt="3.4"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Apply</b> <b class="button">OK</b></p>
+</div>
+<div class="paragraph">
+<p>You may need to move the chart a litle but the ship&#8217;s position appears.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.5.jpg" alt="3.5"></span></p>
+</div>
+<div class="paragraph">
+<p>The NMEA Debug Window can be closed with the <strong>Close</strong> <span class="image"><img src="_images/3.6.jpg" alt="3.6"></span> button.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>Compass/GPS Status Window</strong> shows a green bar <span class="image"><img src="_images/3.7.jpg" alt="3.7"></span> which indicates the strength of the GPS signal.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>Status Bar</strong> shows the ship&#8217;s position.</p>
+</div>
+<div class="paragraph">
+<p>Zooming in <span class="image"><img src="_images/3.8.jpg" alt="3.8"></span> the icon for the ship changes to a boat outline <span class="image"><img src="_images/3.9.jpg" alt="3.9"></span>. The mouse scroll button can also be used to zoom in/out.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_macos"><a class="anchor" href="#_macos"></a>MacOS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Plug in the GPS.</p>
+</div>
+<div class="paragraph">
+<p><b class="button">Options</b> <b class="button">Connections</b></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.1.jpg" alt="3.1"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Add connection</b></p>
+</div>
+<div class="paragraph">
+<p>Use <strong>Serial</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.21.jpg" alt="3.21"></span></p>
+</div>
+<div class="paragraph">
+<p>With the <strong>DataPort</strong> dropdown select the <strong>/dev/cu.usbserial-1410</strong> option.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.22.jpg" alt="3.22"></span></p>
+</div>
+<div class="paragraph">
+<p>Tick the <strong>Show NMEA Debug Window</strong> to view the GPS output.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.4.jpg" alt="3.4"></span></p>
+</div>
+<div class="paragraph">
+<p>The NMEA Debug Window can be closed with the <strong>Close</strong> <span class="image"><img src="_images/3.6.jpg" alt="3.6"></span> button.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>Compass/GPS Status Window</strong> shows a green bar <span class="image"><img src="_images/3.7.jpg" alt="3.7"></span> which indicates the strength of the GPS signal.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>Status Bar</strong> shows the ship&#8217;s position.</p>
+</div>
+<div class="paragraph">
+<p>Zooming in <span class="image"><img src="_images/3.8.jpg" alt="3.8"></span> the icon for the ship changes to a boat outline <span class="image"><img src="_images/3.9.jpg" alt="3.9"></span>. The mouse scroll button can also be used to zoom in/out.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_linux"><a class="anchor" href="#_linux"></a>Linux</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><b class="button">Options</b> <b class="button">Connections</b></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Add connection</b></p>
+</div>
+<div class="paragraph">
+<p>Using the serial connection the DataPort dropdown has an entry <strong>/dev/ttyUSB0-Prolific &#8230;&#8203;</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.11.jpg" alt="3.11"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Apply</b> and then tick <strong>Enable</strong> for this connection.</p>
+</div>
+<div class="paragraph">
+<p>This presents a message about permissions.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.10.jpg" alt="3.10"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">Install rule</b></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.12.jpg" alt="3.12"></span></p>
+</div>
+<div class="paragraph">
+<p><b class="button">OK</b></p>
+</div>
+<div class="paragraph">
+<p>Follow the advice for restarting OpenCPN.</p>
+</div>
+<div class="paragraph">
+<p>A rule (symlink) has been created for using the GPS advice.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.13.jpg" alt="3.13"></span></p>
+</div>
+<div class="paragraph">
+<p>If you need to remove the GPS and clean up the installation the symlink can be removed using <strong>Terminal</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.14.jpg" alt="3.14"></span></p>
+</div>
+<div class="paragraph">
+<p>After restarting OpenCPN and editing the <strong>DataPort</strong> connection to use the symlink <strong>opencpn0</strong> the ship&#8217;s position appears on the map.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.5.jpg" alt="3.5"></span></p>
+</div>
+<div class="paragraph">
+<p>Zoom in <span class="image"><img src="_images/3.8.jpg" alt="3.8"></span> and the boat icon <span class="image"><img src="_images/3.9.jpg" alt="3.9"></span> appears.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
