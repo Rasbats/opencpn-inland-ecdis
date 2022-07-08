@@ -1,0 +1,15 @@
+* xref:index.adoc[OpenCPN Basic Manual]
+
+** xref:howtouse:howtouse.adoc[Using the Manual]
+
+** xref:installation:installation.adoc[Installation]
+
+** xref:getting_started:getting_started.adoc[Home Screen]
+
+** xref:charts:charts.adoc[Installing a Chart]
+
+** xref:GPS:gps.adoc[Adding a GPS Device]
+
+** xref:making_route:makeroute.adoc[Making a Route]
+
+** xref:following_route:followroute.adoc[Following a Route]

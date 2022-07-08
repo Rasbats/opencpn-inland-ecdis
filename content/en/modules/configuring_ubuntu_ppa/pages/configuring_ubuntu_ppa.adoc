@@ -1,0 +1,12 @@
+= Ubuntu ppa
+
+== *Adding the OpenCPN PPA to a Ubuntu system*
+
+With a commandline terminal enter the following commands:
+
+----
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:opencpn/opencpn
+sudo apt-get update
+sudo apt-get install opencpn
+----

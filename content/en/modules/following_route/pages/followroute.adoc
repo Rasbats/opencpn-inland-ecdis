@@ -1,0 +1,39 @@
+:experimental:
+
+= Following a Route
+
+Our ship will follow the 'Basics' route from xref:making_route:makeroute.adoc[HERE].
+
+_right-click_ with the cursor on the route. *Activate*
+
+image:5.0.jpg[]
+
+image:5.1.jpg[]
+
+The waypoint icon flashes and the route colour changes to red.
+
+The waypoint for any alter course position can be activated 
+
+An information box is shown. The planned route is 0.42NM to the left. Range and bearing of the active waypoint are shown, also the VMG (Velocity made good).
+
+image:5.2.jpg[]
+
+The track followed by the ship can be activated with btn:[Enable Tracking] image:5.3.jpg[] on the tool bar.
+
+image:5.4.jpg[]
+
+This results in a track line being plotted on the chart.
+
+If tracking is disabled image:5.5.jpg[] the track colour changes to yellow.
+
+image:5.6.jpg[]
+
+btn:[Route  &amp; Mark Manager] image:4.8.jpg[] 
+
+image:5.7.jpg[] 
+
+Select *Tracks*.
+
+The track recorded is shown.
+
+btn:[Eye] image:5.8.jpg[] allows a track or route to be shown or hidden. 

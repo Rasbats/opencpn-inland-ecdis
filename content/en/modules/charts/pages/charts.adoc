@@ -1,0 +1,132 @@
+:experimental:
+:imagesdir: ../images
+
+= Installing a Chart
+
+For demonstration a freely available U.S. chart (CAPE SABLE TO CAPE HATTERAS) will be used.
+
+== Downloading and installing a U.S. chart
+
+btn:[Options] image:2.0.jpg[] on the tool bar
+btn:[Charts]
+
+image:2.1.jpg[]
+
+* Select the __Chart Downloader__ tab
+
+image:2.2.jpg[]
+
+* Press btn:[Add Catalog]
+
+image:2.3.jpg[]
+
+Select _USA - NOAA & Inland charts_ and press btn:[OK]
+
+Two sets of charts are available, RNC and ENC.
+
+* *RNC* are Raster charts, scanned charts with full navigational detail, where the detail cannot be adjusted.
+* *ENC* Electronic navigational charts where the objects and amount of detail needed can be chosen by the user. These charts are rapidly taking the place of RNC.  
+
+*ENC* is used.
+
+image:2.4.jpg[]
+
+image:2.4.1.jpg[]
+
+Select _"by States"_
+
+image:2.5.jpg[]
+
+A default entry for the folder for downloaded charts is shown. For simplicity the default is used.
+
+*RNC* _"NY - New York"_ is selected. Press btn:[OK]
+
+An entry for New York state appears in the catalog. 
+
+image:2.6.jpg[]
+
+btn:[Update]
+
+Only one chart is needed _CAPE SABLE TO CAPE HATTERAS_
+
+image:2.7.jpg[]
+
+btn:[Select All] first to allow deselecting all the charts
+
+image:2.8.jpg[]
+
+btn:[Select None] and then select _Cape Sable to Cape Hatteras_
+
+image:2.9.jpg[]
+
+btn:[Download selected charts]
+
+image:2.10.jpg[]
+
+btn:[Apply]
+
+This returns you to btn:[Options]
+
+image:2.11.jpg[]
+
+Staying in btn:[Options] select the _Chart Files_ tab and press btn:[Add Directory...]
+Find the folder _US_NY_ where the  _Cape Sable to Cape Hatteras_ chart is located
+
+image:2.12.jpg[]
+
+* Press btn:[Select Folder]
+An entry appears in the list of directories
+
+image:2.14.jpg[]
+
+btn:[Apply] and btn:[OK] to return to the main screen
+
+Move the base chart until you can see the East Coast of the USA.
+
+* Drag with the mouse
+
+--*OR*--
+
+* Click the arrow image:2.14.1.jpg[40, 40] that appears when the mouse pointer is moved to the side of the display
+
+image:2.15.jpg[]
+
+US Charts use the unit *Feet* for depths and heights.
+
+If you want to change units use btn:[Options]
+
+image:2.16.jpg[]
+
+btn:[Display] and select the _Units_ tab
+
+image:2.17.jpg[]
+
+Use the dropdown for _Depth_ to change the unit _Feet_ to _Meters_
+
+btn:[Apply] btn:[OK]
+
+image:2.18.jpg[]
+
+Charts available for OpenCPN are described in the https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:charts:chart_sources[User Manual]
+
+Even without a navigational chart a GPS can be connected and tested. This is described xref:GPS:gps.adoc[HERE].
+
+== High resolution base map
+
+To improve the look of the base map a high resolution version can be installed using the chart downloader (Internet connection needed).
+
+btn:[Options] btn:[Charts] *Chart Downloader* btn:[Add Catalog]
+
+Select *GSHHG basemap* then *All GSHHG basemaps*
+
+Use the default installation directory.
+
+btn:[OK]
+
+btn:[Update] btn:[Download selected charts]
+
+btn:[Apply] btn:[OK]
+
+image:2.19.jpg[]
+
+

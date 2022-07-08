@@ -1,0 +1,4 @@
+name: basic_manual
+version: 0.3
+nav: 
+- modules/ROOT/nav.adoc

@@ -1,0 +1,123 @@
+:experimental:
+:imagesdir: ../images
+
+= Adding a GPS Device
+
+Many different GPS devices can be used to provide OpenCPN with the boat's position. For simplicity the Globalsat BU-353S4 GPS is used to demonstrate installing and using a GPS with OpenCPN
+
+image:3.0.jpg[]
+
+Other GPS devices that are available are listed https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:supplementary_hardware:gps_devices[HERE].
+
+The GPS needs line of sight with satellites. You may need to move the GPS until it has a clear view of the sky. On a boat you could find that sufficient signal is received through a fibreglass deck.
+
+== Device Drivers
+
+Device drivers for various OS can be downloaded https://www.globalsat.com.tw/en/a4-10593/BU-353S4.html[HERE] 
+
+== Windows
+
+Download the installer for the version of Windows you are running.
+
+Install the driver using the installer .exe.
+
+Plug in the GPS. Windows should recognise the device and use the appropriate driver for it.
+
+btn:[Options] btn:[Connections]
+
+image:3.1.jpg[]
+
+btn:[Add connection]
+
+image:3.2.jpg[]
+
+Using the *DataPort* dropdown select the Prolific USB port.
+
+image:3.3.jpg[]
+
+Scroll up and tick the *Show NMEA Debug Window*. This is not strictly necessary but gives a good indication of whether the GPS is functioning correctly.
+
+image:3.4.jpg[]
+
+btn:[Apply] btn:[OK]
+
+You may need to move the chart a litle but the ship's position appears.
+
+image:3.5.jpg[]
+
+The NMEA Debug Window can be closed with the *Close* image:3.6.jpg[] button.
+
+The *Compass/GPS Status Window* shows a green bar image:3.7.jpg[] which indicates the strength of the GPS signal.
+
+The *Status Bar* shows the ship's position.
+
+Zooming in image:3.8.jpg[] the icon for the ship changes to a boat outline image:3.9.jpg[]. The mouse scroll button can also be used to zoom in/out.
+
+== MacOS
+
+Plug in the GPS. 
+
+btn:[Options] btn:[Connections]
+
+image:3.1.jpg[]
+
+btn:[Add connection]
+
+Use *Serial*
+
+image:3.21.jpg[]
+
+With the *DataPort* dropdown select the */dev/cu.usbserial-1410* option.
+
+image:3.22.jpg[]
+
+Tick the *Show NMEA Debug Window* to view the GPS output. 
+
+image:3.4.jpg[]
+
+The NMEA Debug Window can be closed with the *Close* image:3.6.jpg[] button.
+
+The *Compass/GPS Status Window* shows a green bar image:3.7.jpg[] which indicates the strength of the GPS signal.
+
+The *Status Bar* shows the ship's position.
+
+Zooming in image:3.8.jpg[] the icon for the ship changes to a boat outline image:3.9.jpg[]. The mouse scroll button can also be used to zoom in/out.
+
+== Linux
+
+btn:[Options] btn:[Connections]
+
+btn:[Add connection]
+
+Using the serial connection the DataPort dropdown has an entry */dev/ttyUSB0-Prolific ...*.
+
+image:3.11.jpg[]
+
+btn:[Apply] and then tick *Enable* for this connection.
+
+This presents a message about permissions.
+
+image:3.10.jpg[]
+
+btn:[Install rule]
+
+image:3.12.jpg[]
+
+btn:[OK]
+
+Follow the advice for restarting OpenCPN.
+
+A rule (symlink) has been created for using the GPS advice.
+
+image:3.13.jpg[]
+
+If you need to remove the GPS and clean up the installation the symlink can be removed using *Terminal*.
+
+image:3.14.jpg[]
+
+After restarting OpenCPN and editing the *DataPort* connection to use the symlink *opencpn0* the ship's position appears on the map.
+
+image:3.5.jpg[]
+
+Zoom in image:3.8.jpg[] and the boat icon image:3.9.jpg[] appears.
+

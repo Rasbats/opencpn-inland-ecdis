@@ -1,0 +1,6 @@
+= Basic Manual
+
+This guide is an introduction to OpenCPN. It is intended for a new user of the program. 
+
+__Basic__ is based on version 5.6.2 of OpenCPN. It does not include information about the Android version of the program.
+

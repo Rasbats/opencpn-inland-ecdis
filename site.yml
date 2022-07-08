@@ -1,0 +1,21 @@
+site:
+  title: OpenCPN Basic
+  url: https://Rasbats.github.io/opencpn-basic/
+
+content:
+  sources:
+   - url: ./content/en
+     branches: HEAD
+ 
+ui:
+  bundle:
+    url: ./ui-bundle.zip
+    snapshot: true
+    
+output:  
+  dir: ./docs
+  clean: true
+  
+#runtime:
+#  pull: true
+#  cache_dir: ./cache
