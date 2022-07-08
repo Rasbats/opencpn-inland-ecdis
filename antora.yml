@@ -1,5 +1,5 @@
 name: manuals
 title: OpenCPN Inland Ecdis Manual
-version: ~
+version: 0.0
 nav:
   - modules/ROOT/nav.adoc
